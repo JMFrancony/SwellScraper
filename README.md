@@ -2,7 +2,7 @@
 It has been used on a VM running under Ubuntu 16.04.6 LTS and python 3.5.2
 We used MongoDB 3.4.10
 
-Built in a context of academic research, this device is used for Web page monitoring and chrono-scraping. The purpose of this research is to monitor the evolution of a set of web pages in a very dynamic content context. It has been used in the context of Caming studies.
+Built in a context of academic research, this device is used for Web page monitoring and chrono-scraping. The purpose of this research is to monitor the evolution of a set of web pages in a very dynamic content context. It has been used in the context of Caming studies (PACTE Laboratory - University of Grenoble Alpes).
 
 This repository concerns the scheduling part of monitoring and the recording of a page collection. The code is organized around the scrapy module and its event management based on Twisted. 
 
