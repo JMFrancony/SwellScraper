@@ -1,7 +1,7 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-''' a sheduled WebPageCollector Python 3
+''' a sheduled WebPage Collector Python 3
 '''
 
 from Agenda import Agenda, DailyAgenda, WeeklyAgenda
