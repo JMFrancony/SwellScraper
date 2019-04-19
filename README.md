@@ -8,7 +8,7 @@ http://www.theses.fr is used as an example for page collection and data extracti
 
 This repository concerns on one hand, the scheduling part of the monitoring and the recording of a page collection and on the other, the effective data extraction from collected pages. 
 
-# Monitoring the collection.
+# Monitoring a collection
 
 The code is organized around the scrapy module and its event management based on Twisted. Collector.py contain the main program to be launch (under a screen session in Ubuntu). It activates a spider that have to be defined as a sub class of scrapy.Spider in the Spiders.py module (see ThesesSpider() as an example)
 
@@ -16,7 +16,7 @@ The Agenda module deals with the activation (on/off) script of the scrapy/spider
 
 Collected pages are ziped and put into the pipeline for storage (CSV file or Mongodb Database).
 
-# Extracting data.
+# Extracting data
 
 The Extractor module is based on the YapDi (https://github.com/kasun/YapDi) daemonzing package. A specific Web page parser as to be defined in Parser.py as a sub class of WebPageParser(). ThesesParser() is proposed as an example.
 
