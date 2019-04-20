@@ -10,9 +10,9 @@ This repository concerns on one hand, the scheduling part of the monitoring and 
 
 # Monitoring a collection
 
-The code is organized around the scrapy module (https://scrapy.org/) and its event management based on Twisted. Collector.py contain the main program to be launch (under a screen session in Ubuntu). It activates a spider that have to be defined as a sub class of scrapy.Spider in the Spiders.py module (see ThesesSpider() as an example)
+The code is organized around the scrapy module (https://scrapy.org/) and its event management based on Twisted. Collector.py contains the main program to be launch (under a screen session in Ubuntu). It activates a spider that have to be defined as a sub class of scrapy.Spider in the Spiders.py module (see ThesesSpider() as an example)
 
-The Agenda module deals with the activation (on/off) script of the scrapy/spider. The agenda is setup in the config file. Daily (HMS scripting) or Weekly (DHMS scripting) subclasses of agenda can be used. The module URLRoller defines a roulette of URLs which must be analyzed once or cyclically. A cycle can be suspended or interrupted by the time constraints of the agenda.
+The Agenda module deals with the activation (on/off) script of the scrapy/spider. The agenda is setup in the config file (.cfg). Daily (HMS scripting) or Weekly (DHMS scripting) subclasses of agenda can be used. The module URLRoller defines a roulette of URLs which must be analyzed once or cyclically. A cycle can be suspended or interrupted by the time constraints of the agenda.
 
 Collected pages are ziped and put into the pipeline for storage (CSV file or Mongodb Database).
 
